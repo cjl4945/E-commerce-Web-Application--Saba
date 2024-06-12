@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+input,
+select,
+textarea {
+  @apply rounded border p-2  outline-none ring-indigo-300  focus:ring
+   dark:text-white dark:bg-gray-800;
+}
+
+.card {
+  @apply mb-5  block   rounded-lg border border-gray-200  shadow-md;
+}
+
+.cart-badge {
+  @apply absolute top-0 right-0 mb-4 bg-red-500 text-white rounded-full w-6 h-6 flex items-center justify-center;
+}
+
+.primary-button {
+  @apply rounded bg-blue-600 text-black py-2 px-4 shadow outline-none
+   hover:bg-blue-800  active:bg-blue-800;
+}
+.default-button {
+  @apply rounded bg-gray-100 py-2  px-4 text-black shadow outline-none
+   hover:bg-gray-200  active:bg-gray-300
+     dark:text-white dark:bg-gray-800 dark:hover:bg-gray-700;
+}
+
+.caret {
+  @apply w-0 h-0 border-8 border-solid border-transparent border-r-gray-300
+   dark:border-r-gray-900 absolute ml-[73px] -mt-5;
+}
